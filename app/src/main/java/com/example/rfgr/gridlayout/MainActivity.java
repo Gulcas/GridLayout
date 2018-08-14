@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    /**Po kliknięciu przycisku zostanie wywołana i wykonana poniższa metoda. Ma ona za zadanie odebrać wartość wpisaną w polu editText i umieścić ją w innym polu textView*/
     public void sendButton (View view) {
         EditText messageView = (EditText) findViewById(R.id.adressName);
         String messageText = messageView.getText().toString();
