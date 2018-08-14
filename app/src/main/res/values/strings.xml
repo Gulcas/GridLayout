@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GridLayout</string>
+    <string name="to">Treść</string>
+    <string name="enterName">Wpisz adres</string>
+    <string name="enterMessage">Wpisz wiadomość</string>
+    <string name="send">WYŚLIJ</string>
+</resources>
