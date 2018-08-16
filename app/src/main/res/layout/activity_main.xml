@@ -62,12 +62,37 @@
         android:layout_row="2" />
 
     <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_column="0"
         android:layout_gravity="left"
         android:layout_row="1"
+        android:onClick="checkBoxOnClick"
         android:text="CheckBox" />
+
+    <RadioGroup
+        android:id="@+id/radioGrupa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_row="3"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/guzik_1_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="guzikClick"
+            android:text="guzik 1" />
+
+        <RadioButton
+            android:id="@+id/guzik_2_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="guzikClick"
+            android:text="guzik 2" />
+    </RadioGroup>
 
 
 </GridLayout>
