@@ -30,7 +30,7 @@
     <TextView
         android:id="@+id/messageWindow"
         android:layout_width="wrap_content"
-        android:layout_height="360dp"
+        android:layout_height="150dp"
         android:layout_column="0"
         android:layout_columnSpan="2"
         android:layout_gravity="center"
@@ -93,6 +93,13 @@
             android:onClick="guzikClick"
             android:text="guzik 2" />
     </RadioGroup>
-
+<Spinner
+    android:layout_row="4"
+    android:layout_column="0"
+    android:id="@+id/spiner"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:entries="@array/string_value">
+</Spinner>
 
 </GridLayout>

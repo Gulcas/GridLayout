@@ -4,4 +4,9 @@
     <string name="enterName">Wpisz adres</string>
     <string name="enterMessage">Wpisz wiadomość</string>
     <string name="send">WYŚLIJ</string>
+    <string-array name="string_value">
+        <item>itemek 1</item>
+        <item>itemek 2</item>
+        <item>itemek 3</item>
+    </string-array>
 </resources>

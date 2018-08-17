@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
@@ -28,6 +29,11 @@ public class MainActivity extends AppCompatActivity {
     public void sendButton(View view) {
         TextView textVi = (TextView) findViewById(R.id.messageWindow);
         textVi.setText(messageText);
+
+        Spinner spinnerName = (Spinner) findViewById(R.id.spiner); //odnajduję spinner
+        String string = String.valueOf(spinnerName.getSelectedItem()); //konwertuję wybrany spiner do string'a
+        Toast.makeText(this, string, Toast.LENGTH_SHORT).show(); //tworzony jest toast którego treścią będzie opcja wybrana w spinnerze
+        //a w związku z tym że spiner i toast są częścią klasy sendButton to ten kod zostaje wykonany dopiero po wciśnięciu guzika send
     }
 
     public void toggleButton(View view) {
@@ -86,4 +92,5 @@ public class MainActivity extends AppCompatActivity {
                 break;
         }
     }
+
 }
